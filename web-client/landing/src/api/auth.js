@@ -121,7 +121,7 @@ export function getCities (obj, successCallBack, errorCallBack) {
 
 export function sendVerification (obj, successCallBack, errorCallBack) {
   const OTP = generateOTP()
-  const URL = `https://app.newsletters.lk/smsAPI?sendsms&apikey=jj40RVXfHAqDlGM2gNIShmPmzSjhfNYK&apitoken=3saL1613665175&type=sms&from=Akurata.lk&to=+94${obj.phone}&text=Your+verification+code+for+Akurata.lk+is+${OTP}&route=0`
+  const URL = `https://app.newsletters.lk/smsAPI?sendsms&apikey=API_KEY_GOES_HERE&apitoken=TOKEN_GOES_HERE&type=sms&from=Akurata.lk&to=+94${obj.phone}&text=Your+verification+code+for+Akurata.lk+is+${OTP}&route=0`
   axios.get(
     URL
   )
