@@ -1,0 +1,6 @@
+{
+    "require": {
+        "dilab/resumable.php": "^0.1.4",
+        "mpdf/mpdf": "^8.0"
+    }
+}

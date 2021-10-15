@@ -1,0 +1,137 @@
+@media (min-width: 768px) {
+  .page {
+    &.home {
+      .home-logo-wrapper {
+        margin: 0 0 50px 0;
+        svg {
+          height: 170px;
+        }
+      }
+      #section-2 {
+        margin-top: 150px;
+      }
+      .how-to-video {
+        height: 370px;
+      }
+    }
+  }
+  .video-player {
+    iframe {
+      height: 390px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .page {
+    margin-top: 0;
+    margin-left: 0;
+    &.home {
+      width: 100%;
+      #section-2 {
+        margin-top: 0;
+      }
+      .home-container {
+        height: calc(100vh - 64px);
+        .home-logo-wrapper {
+          margin: 0;
+        }
+        .hero-logo {
+          width: calc(100% - 1rem);
+        }
+        .how-to-video {
+          height: 280px;
+        }
+      }
+      .swap-box-ul {
+        li {
+          .swap-box-wrapper {
+            flex-wrap: nowrap;
+            .swap-box-left {
+              margin-right: 20px;
+              .swap-box-image {
+                width: 250px;
+                height: 200px;
+                background-size: cover;
+                background-position: 50%;
+                float: left;
+              }
+            }
+            .swap-box-right {
+              margin-right: 20px;
+              .swap-box-head {
+                margin-bottom: 30px;
+                font-weight: 500;
+              }
+              .swap-box-desc {
+                font-size: 16px;
+              }
+              .swap-box-link {
+                position: relative;
+                padding-bottom: 2px;
+                border: none;
+                text-transform: uppercase;
+                font-weight: 600;
+              }
+            }
+          }
+          &:nth-child(even) {
+            .swap-box-wrapper {
+              display: flex;
+              flex-direction: row-reverse;
+              .swap-box-left {
+                margin-left: 20px;
+                margin-right: 0;
+              }
+              .swap-box-right {
+                margin-left: 20px;
+                margin-right: 0;
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .header {
+    // position: fixed;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    // background-image: linear-gradient(to bottom, #fff 40%, transparent);
+    width: calc(100% - 4rem);
+  }
+  .video-player {
+    iframe {
+      height: 350px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .page {
+    &.home {
+      // padding-top: 70px;
+      .home-container {
+        .hero-logo {
+          width: 100%;
+        }
+        .how-to-video {
+          height: 380px;
+        }
+      }
+    }
+  }
+  .is-sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+  }
+  .video-player {
+    iframe {
+      height: 410px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {}
